@@ -15,7 +15,7 @@ function App() {
 ]
   return (
     <div>
-      <Header/>
+      <Header headertext="Reactjs Phone Directory"/>
       <button>Add</button>
       <div className="field-row">
         <span className="field-item strong">Name</span>
@@ -36,6 +36,7 @@ function App() {
           )
         })
       }
+     
     </div>
   );
 }
