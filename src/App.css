@@ -7,6 +7,9 @@ button{
     cursor: pointer;
     margin-left: 15px;
 }
+.delete{
+    background-color: red;
+}
 
 .field-row{
     width:100%;

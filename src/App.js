@@ -31,6 +31,7 @@ function App() {
             <div className="field-row" key={i}>
               <span className="field-item">{item.name}</span>
               <span className="field-item">{item.phone}</span>
+              <span className="field-item"><button className="delete">Delete</button></span>
             </div>
           )
         })
