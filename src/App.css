@@ -28,3 +28,14 @@ button{
     display: inline-block;
     color:gray;
 }
+
+form{
+    padding: 0 15px;
+}
+.card-container{
+    width:100px;
+    height:100px;
+    margin: 5px;
+    background-color: #eee;
+    display:inline-block;
+}
