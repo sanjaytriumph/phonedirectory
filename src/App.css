@@ -32,7 +32,7 @@ button{
 form{
     padding: 0 15px;
 }
-.card-container{
+.card-container, .number-card{
     width:100px;
     height:100px;
     margin: 5px;
