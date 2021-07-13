@@ -4,40 +4,21 @@ import { Link } from 'react-router-dom';
 import './App.css';
 
 class ShowSubscribers extends React.Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
+        
         this.state = {
-            subscribers: [
-                {
-                    id: 1,
-                    name: "Sanjay",
-                    phone: 9889999999
-                },
-                {
-                    id: 2,
-                    name: "Raj",
-                    phone: 8889999977
-                },
-                {
-                    id: 3,
-                    name: "Vimal",
-                    phone: 8889912345
-                },
-                {
-                    id: 4,
-                    name: "Ajay",
-                    phone: 9865999977
-                }
-            ]
+            subslist: this.props.parentlist
         }
+        
     }
     
   deleteHandler = (currentIndex) =>{    
-    this.state.subscribers.splice(currentIndex,1);
+    this.state.subslist.splice(currentIndex,1);
     //console.log(this.state.subscribers);
-    this.setState(this.state.subscribers);
+    this.setState(this.state.subslist);
   };
-
+  
   
   render(){
     return (
@@ -50,7 +31,7 @@ class ShowSubscribers extends React.Component{
           </div>      
           
           {
-            this.state.subscribers.map((item, i)=>{
+            this.state.subslist.map((item, i)=>{
               return(
                 <div className="field-row" key={i}>
                   <span className="field-item">{item.name}</span>
